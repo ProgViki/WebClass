@@ -1,11 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram Updated Clone</title>
+  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo">Instagram</div>
+      <nav>
+        <ul>
+          <li class="menu-items"><i class="bx bx-home"></i>Home</li>
+          <li class="menu-items"><i class="bx bx-search"></i>Search</li>
+          <li class="menu-items"><i class="bx bx-movie-play"></i> Reels</li>
+          <li class="menu-items"><i class="bx bx-chat"></i> Messages</li>
+          <li class="menu-items"><i class="bx bx-heart"></i> Notifications</li>
+          <li class="menu-items"><i class="bx bx-plus-circle"></i> Create</li>
+          <li class="menu-items"><i class="bx bx-user"></i> Profile</li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main Section -->
+    <main class="main">
+      <div class="left-section">
+        <div class="reels">
+          <h2>Reels</h2>
+          <div class="reel-container">
+            <div class="reel"><img src="reel1.jpg" alt="Reel 1"></div>
+            <div class="reel"><img src="reel2.jpg" alt="Reel 2"></div>
+            <div class="reel"><img src="reel3.jpg" alt="Reel 3"></div>
+            <div class="reel"><img src="reel4.jpg" alt="Reel 4"></div>
+          </div>
+        </div>
+        
+        <!-- Feed Section -->
+        <div class="feed">
+          <div class="post">
+            <div class="post-header">
+              <img src="user1.jpg" alt="User 1" class="post-profile-pic">
+              <p class="post-username">user1</p>
+            </div>
+            <img src="post1.jpg" alt="Post" class="post-image">
+            <div class="post-footer">
+              <i class="bx bx-heart"></i>
+              <i class="bx bx-comment"></i>
+              <i class="bx bx-send"></i>
+              <i class="bx bx-bookmark"></i>
+              <p class="post-caption"><strong>user1</strong> Beautiful sunset at the beach!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Section (Suggestions and Account Switch) -->
+      <aside class="right-section">
+        <div class="account-switch">
+          <img src="profile.jpg" alt="Profile" class="profile-pic">
+          <div>
+            <p class="username">your_username</p>
+            <p class="name">Your Name</p>
+          </div>
+          <button class="switch-btn">Switch</button>
+        </div>
+        <div class="suggestions">
+          <h3>Suggestions for you</h3>
+          <div class="suggestion">
+            <img src="user2.jpg" alt="User 2" class="suggestion-pic">
+            <div>
+              <p class="suggestion-username">user2</p>
+              <p class="suggestion-name">User Two</p>
+            </div>
+            <button class="follow-btn">Follow</button>
+          </div>
+        </div>
+      </aside>
+    </main>
+  </div>
 </body>
 </html>
