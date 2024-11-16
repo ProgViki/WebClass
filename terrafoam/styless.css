@@ -1,0 +1,136 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Header */
+  header {
+    background: #0a0a0a;
+    color: #fff;
+    padding: 20px 10%;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  
+  .navbar-nav {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar-nav a {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    transition: color 0.3s;
+  }
+  
+  .navbar-nav a:hover {
+    color: #ff6a3d;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: linear-gradient(180deg, #1e293b 0%, #334155 100%);
+    color: #fff;
+    text-align: center;
+    padding: 80px 10%;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .hero .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background: #ff6a3d;
+    border: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+  
+  .hero .btn:hover {
+    background: #ff5020;
+  }
+  
+  /* Features Section */
+  .features {
+    padding: 60px 10%;
+    background: #f8fafc;
+    color: #0f172a;
+  }
+  
+  .features h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+  
+  .feature-cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .feature-card {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+  }
+  
+  .feature-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #0f172a;
+  }
+  
+  .feature-card p {
+    font-size: 1rem;
+    color: #475569;
+  }
+  
+  /* Footer */
+  footer {
+    background: #0a0a0a;
+    color: #fff;
+    text-align: center;
+    padding: 20px 10%;
+    font-size: 0.9rem;
+  }
+  
