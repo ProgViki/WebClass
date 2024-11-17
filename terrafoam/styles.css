@@ -252,7 +252,7 @@
     background-color: black;
     padding: 80px 10%;
     color: white;
-    padding: 40px 20px;
+    padding: 60px 20px;
     /* margin: 10px; */
     border-radius: 6px;
 
@@ -276,6 +276,7 @@
     gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 40px;
     /* width: 100%; */
   }
   .services-card{
@@ -306,7 +307,39 @@
   }
 
 
-
+  .customer-cards{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 40px;
+    background: #121214;
+    /* width: 100%; */
+  }
+  .customer-card {
+    /* background: #121214; */
+    border-radius: 15px;
+    text-align: center;
+    min-width: 300px;
+    max-width: 350px;
+    box-shadow: 4%;
+  }
+  .customer-card img{
+    border-radius: 15px;
+  }
+  .customer-link {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: medium;
+    font-weight: 600;
+    margin: 10px;
+    padding: 14px 4px;
+    /* margin-bottom: 20px; */
+  }
+  .customer-links {
+    background-color: #f3f4f6;
+  }
    /* Footer */
    footer {
     background: #0a0a0a;
