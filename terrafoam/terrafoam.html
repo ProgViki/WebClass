@@ -51,13 +51,16 @@
   </section>
 
   <!-- Features Section -->
-  <section class="features" id="features">
+  <main class="features" id="features">
     <h1>Deliver infrastructure as code</h1>
     <p style="color: gray;">Terrafoam codifies cloud APIs into declarative configuration files</p>
 
-    <div>
-        <img src="/Images/terrafoamdesign.png" alt="Side View Terrafoam" style="width: 40%; height: 280px;">
-        <div>
+    <div style="display: flex; justify-content: space-evenly; align-items: center;">
+        <div style="width: 40%;">
+            <img src="/Images/terrafoamdesign.png" alt="Side View Terrafoam" style="width: 70%; height: 280px;">
+        </div>
+        <div class="features-list"
+        style="width: 60%; display: grid; grid-template-columns: 1fr 1fr; grid-gap: 10px; margin-top: 20px; text-align: center; font-size: large;">
             <div>
                 <h4>Adopt</h4>
                 <p>Compose infrastructure as code in a Terrafoam file using HCl to provision resources from any infrastructure provider.</p>
@@ -71,26 +74,132 @@
                 <p>Compose infrastructure as code in a Terrafoam file using HCl to provision resources from any infrastructure provider.</p>
             </div>
             <div>
-                <h4>Adopt</h4>
+                <h4>Scale</h4>
                 <p>Compose infrastructure as code in a Terrafoam file using HCl to provision resources from any infrastructure provider.</p>
             </div>
         </div>
     </div>
     <div class="feature-cards">
-      <div class="feature-card">
-        <h3>Scalability</h3>
-        <p>Easily scale your applications as your needs grow.</p>
-      </div>
-      <div class="feature-card">
-        <h3>Reliability</h3>
-        <p>Experience high availability and fault tolerance.</p>
-      </div>
-      <div class="feature-card">
-        <h3>Security</h3>
-        <p>Your data is protected with top-notch security measures.</p>
-      </div>
+        <h1>Common use cases for <br> Terrafoam</h1>
+     <div class="card-container">
+        <div class="feature-card">
+            <h5>Infrastructure as code</h5>
+            <p>Use Infrastructure as code to automate the provisioning of your 
+                infrastructure including servers, databases, firewall policies, and 
+                almost any other resources.
+            </p>
+          </div>
+          <div class="feature-card">
+            <h5>Multi-cloud Provisioning</h5>
+            <p>Deploy serverless functions with AWS Lambda, manage Microsoft
+                Azure Active Directory resources, provision a load balancer in
+                Google Cloud, and more.</p>
+          </div>
+          <div class="feature-card">
+            <h5>Manage Kubernetes</h5>
+            <p>Prvision and manage Kubernetes clusters on AWS, Microsoft Azure
+                or Google Cloud, and interact with your cluster using the Kubernetes Terrafoa provider
+            </p>
+          </div>
+          <div class="feature-card">
+            <h5>Manage Network Infrastructure</h5>
+            <p>Automate key networking tasks like updating load balancer target pools
+                or applying firewall policies.</p>
+          </div>
+          <div class="feature-card">
+            <h5>Manage virtual images</h5>
+            <p>Build and manage virtual images with Terrafoam and Packer.</p>
+          </div>
+          <div class="feature-card">
+            <h5>Integrate with existing workflows</h5>
+            <p>Automate infrastructure deployments through existing CI/CD workflows</p>
+          </div>
+          <div class="feature-card">
+            <h5>Enforce policy as code</h5>
+            <p>Enforce policy guardrails before your users create infrastructure using Sentinel policy as code.</p>
+          </div>
+          <div class="feature-card">
+            <h5>Inject secrets into Terrafoam</h5>
+            <p>Use HashiCorp Vault to automate the usage of dynamically generated secrets and credentials
+                within Terrafoam configurations.</p>
+          </div>
+         
+     </div>
     </div>
+    <!-- Services and Testimonials -->
+  <section class="services" id="features">
+    <h1>Terrafoam in practice</h1>
+    <p style="color: gray;">The best way to understand what Terrafoam can enable for your infrastructure is to see it in action</p>
+
+     <div class="services-cards">
+        <div class="services-card">
+            <h6>TUTORIAL</h6>
+            <h4>Infrastructure as code</h4>
+            <p>Use Infrastructure as code to automate the provisioning of your 
+                infrastructure including servers, databases, firewall policies, and 
+                almost any other resources.
+            </p>
+            <div class="card-footer">
+                <p>Logo</p>
+                <p>Arrow</p>
+            </div>
+          </div>
+          <div class="services-card">
+            <h6>TUTORIAL</h6>
+            <h5>Multi-cloud Provisioning</h5>
+            <p>Deploy serverless functions with AWS Lambda, manage Microsoft
+                Azure Active Directory resources, provision a load balancer in
+                Google Cloud, and more.</p>
+                <div class="card-footer">
+                    <p>Logo</p>
+                    <p>Arrow</p>
+                </div>
+          </div>
+          <div class="services-card">
+            <h6>TUTORIAL</h6>
+            <h5>Manage Kubernetes</h5>
+            <p>Prvision and manage Kubernetes clusters on AWS, Microsoft Azure
+                or Google Cloud, and interact with your cluster using the Kubernetes Terrafoa provider
+            </p>
+            <div class="card-footer">
+                <p>Logo</p>
+                <p>Arrow</p>
+            </div>
+          </div>
+          <div class="services-card">
+            <h6>TUTORIAL</h6>
+            <h5>Manage Network Infrastructure</h5>
+            <p>Automate key networking tasks like updating load balancer target pools
+                or applying firewall policies.</p>
+                <div class="card-footer">
+                    <p>Logo</p>
+                    <p>Arrow</p>
+                </div>
+          </div>
+          <div class="services-card">
+            <h6>TUTORIAL</h6>
+            <h5>Manage virtual images</h5>
+            <p>Build and manage virtual images with Terrafoam and Packer.</p>
+            <div class="card-footer">
+                <p>Logo</p>
+                <p>Arrow</p>
+            </div>
+          </div>
+          <div class="services-card">
+            <h6>TUTORIAL</h6>
+            <h5>Integrate with existing workflows</h5>
+            <p>Automate infrastructure deployments through existing CI/CD workflows</p>
+            <div class="card-footer">
+                <p>Logo</p>
+                <p>Arrow</p>
+            </div>
+          </div>
+     </div>
+   
   </section>
+  </main>
+
+  
 
   <!-- Footer -->
   <footer id="contact">

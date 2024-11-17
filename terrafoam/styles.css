@@ -144,7 +144,7 @@
     text-align: center;
   }
   .features h1 {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     margin-bottom: 20px;
     font-weight: 700;
     text-align: center;
@@ -173,7 +173,8 @@
   
   /* Features Section */
   .features {
-    padding: 60px 10%;
+    padding: 60px 4%;
+    /* margin: 20px auto; */
     background: #ECECEC;
     color: #0f172a;
   }
@@ -184,11 +185,20 @@
     margin-bottom: 40px;
   }
   
+  .feature-cards h1 {
+    font-size: 2.5rem;
+    margin: 20px;
+    font-weight: 700;
+    display: block;
+  }
+
   .feature-cards {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 10px;
+    margin: 30px auto;
   }
   
   .feature-card {
@@ -213,12 +223,95 @@
     color: #475569;
   }
   
-  /* Footer */
-  footer {
+  
+  .features-list p {
+    font-size: small;
+  }
+
+  .card-container {
+    /* margin: 20px; */
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    gap: 20px;
+    width: 100%;
+  }
+
+  .card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    /* display: block; */
+  }
+
+  .services{
+    background-color: black;
+    padding: 80px 10%;
+    color: white;
+    padding: 40px 20px;
+    /* margin: 10px; */
+    border-radius: 6px;
+
+  }
+ 
+  .services h1 {
+    font-size: 2.5rem;
+    /* margin: 20px auto; */
+    color: white;
+    text-align: center;
+    
+  }
+  
+  .services p {
+    font-size: 1.2rem;
+    color: white;
+    text-align: center;
+  }
+  .services-cards{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* width: 100%; */
+  }
+  .services-card{
+    background: #121214;
+    /* border: 1px solid #e2e8f0; */
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    /* flex: 1; */
+    min-width: 300px;
+    max-width: 350px;
+    box-shadow: 4%;
+  }
+  .services-card p {
+    font-size: small;
+    margin-bottom: 15px;
+    color: white;
+    margin: 20px;
+  }
+  .services-card h4 {
+    margin-bottom: 10px;
+  }
+  .card-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e2e8f0;
+  }
+
+
+
+   /* Footer */
+   footer {
     background: #0a0a0a;
     color: #fff;
     text-align: center;
     padding: 20px 10%;
     font-size: 0.9rem;
   }
-  
