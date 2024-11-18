@@ -21,7 +21,16 @@
         </div>
       </div>
       <nav class="navbar-nav">
-        <a href="#overview">Overview</a>
+        <div class="dropdown">
+            <a href="#overview" class="dropdown-button" onclick="toggleDropdown()">
+              Overview <i class="bx bx-chevron-down"></i>
+            </a>
+            <ul class="dropdown-menu" id="dropdownMenu">
+              <li><a href="#">Option 1</a></li>
+              <li><a href="#">Option 2</a></li>
+              <li><a href="#">Option 3</a></li>
+            </ul>
+          </div>
         <a href="#usecase">Use  Cases</a>
         <a href="#registry">Registry</a>
         <a href="#contact">Tutorials</a>
@@ -198,22 +207,22 @@
      </div>
    
   </section>
-  <section>
-    <h3>Customer Stories</h3>
-    <p>Enterprises from around the globe trust HashiCorp. These are some of the most innovative stories from our customers about 
-        how they are using HashiCorp solutions to make the transition to multi-cloud infrastructure.</p>
+  <section class="customer">
+     <div class="customer-content">
+        <h3>Customer Stories</h3>
+        <p>Enterprises from around the globe trust HashiCorp. These are some of the most innovative stories from our customers about 
+            how they are using HashiCorp solutions to make the transition to multi-cloud infrastructure.</p>
+     </div>
    
      <div class="customer-cards">
         <div class="customer-card">
-            <img src="/Images/skyscrapper.jfif" alt="sky-scrapper" width="100%" height="100%">
-            <h5>Customer Name</h5>
-            <p>Customer Story</p>
+            <img src="/Images/biz-city.webp" alt="sky-scrapper" width="100%" height="100%">
+            <h5>A bank, the cloud and the paradigm shift</h5>
             
           </div>
           <div class="customer-card">
-            <img src="/Images/business house.jfif" alt="biz-house"  width="100%" height="100%">
-            <h5>Customer Name</h5>
-            <p>Customer Story</p>
+            <img src="/Images/Data-centers.jpg" alt="biz-house"  width="100%" height="100%">
+            <h6>Cruise uses HashiCorp Terrafoam to increase engineering agility and rapidly build autonomous vehicle technology</h6>
           </div>
           <div class="customer-links">
             <div class="customer-link">
@@ -282,4 +291,24 @@
      </div>
   </footer>
 </body>
+<script>
+    // Onclick Toggle
+    function toggleDropdown() {
+      const dropdownMenu = document.getElementById("dropdownMenu");
+      dropdownMenu.classList.toggle("show");
+    }
+  
+    // Close Dropdown when clicking outside
+    window.onclick = function (event) {
+      if (!event.target.matches('.dropdown-button')) {
+        const dropdowns = document.getElementsByClassName("dropdown-menu");
+        for (let i = 0; i < dropdowns.length; i++) {
+          if (dropdowns[i].classList.contains('show')) {
+            dropdowns[i].classList.remove('show');
+          }
+        }
+      }
+    }
+  </script>
+  
 </html>
