@@ -6,26 +6,56 @@
   <title>Bootstrap 5 Styled Landing Page</title>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
   <!-- Header -->
+  <nav class="bg-white py-2 border-top" aria-label="Main navigation">
+    <div class="container d-flex justify-content-between align-items-center">
+      <input type="text" class="form-control w-50" placeholder="Search...">
+      <select class="form-select w-auto">
+        <option selected>Bootstrap 5</option>
+        <option>Bootstrap 4</option>
+        <option>Bootstrap 3</option>
+      </select>
+    </div>
+  </nav>
   <header class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
-    <div class="container">
-      <a href="#" class="navbar-brand fw-bold">Bootstrap</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a href="#docs" class="nav-link">Docs</a></li>
-          <li class="nav-item"><a href="#examples" class="nav-link">Examples</a></li>
-          <li class="nav-item"><a href="#icons" class="nav-link">Icons</a></li>
-          <li class="nav-item"><a href="#themes" class="nav-link">Themes</a></li>
-          <li class="nav-item"><a href="#blog" class="nav-link">Blog</a></li>
-        </ul>
+    
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="d-flex j-ustify-content-between align-items-center">
+        <a href="#" class="navbar-brand fw-bold text-white py-2 px-3 bg-dark rounded-3">B</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a href="#docs" class="nav-link">Docs</a></li>
+            <li class="nav-item"><a href="#examples" class="nav-link">Examples</a></li>
+            <li class="nav-item"><a href="#icons" class="nav-link">Icons</a></li>
+            <li class="nav-item"><a href="#themes" class="nav-link">Themes</a></li>
+            <li class="nav-item"><a href="#blog" class="nav-link">Blog</a></li>
+          </ul>
+        </div>
+      </div>
+     
+      <div class="d-flex gap-3  text-white justify-content-between align-items-center">
+        <a href="#" class="text-secondary"><i class="fab fa-facebook fa-lg"></i></a>
+        <a href="#" class="text-secondary"><i class="fab fa-twitter fa-lg"></i></a>
+        <a href="#" class="text-secondary"><i class="fas fa-redo fa-lg"></i></a>
+        <a href="#download" class="btn btn-outline-secondary ">Download</a>
       </div>
     </div>
+   
   </header>
+  <nav class="bg-white py-2 border-top">
+    <div class="container d-flex justify-content-between align-items-center">
+      <input type="text" class="form-control w-50" placeholder="Search...">
+      <select class="form-select w-auto">
+        <option selected>Bootstrap 5</option>
+        <option>Bootstrap 4</option>
+        <option>Bootstrap 3</option>
+      </select>
+    </div>
+  </nav>
 
   <!-- Main Section -->
   <main>

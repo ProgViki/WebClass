@@ -301,6 +301,24 @@
   .services-card h4 {
     margin-bottom: 10px;
   }
+
+.services-card footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .services-card footer img {
+    width: 30px;
+    height: auto;
+  }
+  
+  .services-card footer i {
+    font-size: 24px;
+    color: #007bff;
+    cursor: pointer;
+  }
+  
   .card-footer{
     display: flex;
     justify-content: space-between;
