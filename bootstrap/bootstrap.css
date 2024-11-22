@@ -40,3 +40,15 @@ body {
 *, ::after, ::before {
     box-sizing: border-box;
 }
+
+header{
+    background-color: var(--bs-purple);
+    border-top: 1px solid var(--bs-purple);
+
+
+}
+
+.pre-header {
+    background-color: var(--bs-purple);
+    box-shadow: 10px;
+}
