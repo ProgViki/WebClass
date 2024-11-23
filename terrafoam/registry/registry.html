@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registry Page</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="navbar">
+      <div class="navbar-brand">
+        <img src="/Images/terraform-logos.png" alt="Terraform Logo" width="40px" height="40px">
+        <div class="logo" style="line-height: 1.2;">
+            <p style="font-size: x-small; font-weight: 600; color: #333;">HashiCorp</p>
+            <p style="font-weight: bolder; font-size: large;">Terraform Community</p>
+        </div>
+      </div>
+      <nav class="navbar-nav">
+        <a href="#overview">Overview</a>
+        <div class="dropdown">
+            <a href="#usecase" class="dropdown-button" onclick="toggleDropdown()">
+              Use Cases <i class="bx bx-chevron-down"></i>
+            </a>
+            <ul class="dropdown-menu" id="dropdownMenu">
+              <li><a href="#">Enforce policy as code</a></li>
+              <li><a href="#">Infrastructure as code</a></li>
+              <li><a href="#">Inject secrets into Terraform</a></li>
+              <li><a href="#">Integrate with existing workflows</a></li>
+              <li><a href="#">Manage Kubernetes</a></li>
+              <li><a href="#">Manage virtual machine images</a></li>
+              <li><a href="#">Multi-cloud provisioning</a></li>
+              <li><a href="#">Network infrastructure automation</a></li>
+            </ul>
+          </div>
+        <a href="registry.html">Registry</a>
+        <a href="#contact">Tutorials</a>
+        <a href="#docs">Docs</a>
+        <a href="#community">Community</a>
+        <div class="navbar-buttons">
+            <a href="https://github.com" class="btn-icon" target="_blank" aria-label="GitHub">
+              <i class="bx bxl-github" style="font-size: x-large;"></i>
+            </a>
+            <a href="#download" class="btn-download">
+              <i class="bx bx-download" style="font-size: large; font-weight: 400;"></i> Download
+            </a>
+            <a href="#hcp" class="btn-primary">Try HCP Terrafoam</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <h1>Automate infrastructure on any  <br> cloud with Terraform</h1>
+    <p style="color: gray;">Infrastructure automation to provision and manage resources in any cloud or data center</p>
+    <a href="#get-started" class="btn">Try HCP Terrafoam</a>
+    <a href="#download" class="btns" style="text-align: center;">
+        Download Terrafoam <i class="fa fa-arrow-right" aria-hidden="true"></i>
+    </a>
+  </section>
+
+  <!-- Features Section -->
+  <main class="features" id="features">
+    <h1>Deliver infrastructure as code</h1>
+    <p style="color: gray;">Terrafoam codifies cloud APIs into declarative configuration files</p>
+
+    <div style="display: flex; justify-content: space-evenly; align-items: center;">
+        <div style="width: 40%;">
+            <img src="/Images/terrafoamdesign.png" alt="Side View Terrafoam" style="width: 70%; height: 280px;">
+        </div>
+        <div class="features-list"
+        style="width: 60%; display: grid; grid-template-columns: 1fr 1fr; grid-gap: 10px; margin-top: 20px; text-align: center; font-size: large;">
+            <div>
+                <h4>Adopt</h4>
+                <p>Compose infrastructure as code in a Terrafoam file using HCl to provision resources from any infrastructure provider.</p>
+            </div>
+            <div>
+                <h4>Build</h4>
+                <p>Compose infrastructure as code in a Terrafoam file using HCl to provision resources from any infrastructure provider.</p>
+            </div>
+            <div>
+                <h4>Standardize</h4>
+                <p>Compose infrastructure as code in a Terrafoam file using HCl to provision resources from any infrastructure provider.</p>
+            </div>
+            <div>
+                <h4>Scale</h4>
+                <p>Compose infrastructure as code in a Terrafoam file using HCl to provision resources from any infrastructure provider.</p>
+            </div>
+        </div>
+    </div>
+    <div class="feature-cards">
+        <h1>Common use cases for <br> Terrafoam</h1>
+     <div class="card-container">
+        <div class="feature-card">
+            <h5>Infrastructure as code</h5>
+            <p>Use Infrastructure as code to automate the provisioning of your 
+                infrastructure including servers, databases, firewall policies, and 
+                almost any other resources.
+            </p>
+          </div>
+          <div class="feature-card">
+            <h5>Multi-cloud Provisioning</h5>
+            <p>Deploy serverless functions with AWS Lambda, manage Microsoft
+                Azure Active Directory resources, provision a load balancer in
+                Google Cloud, and more.</p>
+          </div>
+          <div class="feature-card">
+            <h5>Manage Kubernetes</h5>
+            <p>Prvision and manage Kubernetes clusters on AWS, Microsoft Azure
+                or Google Cloud, and interact with your cluster using the Kubernetes Terrafoa provider
+            </p>
+          </div>
+          <div class="feature-card">
+            <h5>Manage Network Infrastructure</h5>
+            <p>Automate key networking tasks like updating load balancer target pools
+                or applying firewall policies.</p>
+          </div>
+          <div class="feature-card">
+            <h5>Manage virtual images</h5>
+            <p>Build and manage virtual images with Terrafoam and Packer.</p>
+          </div>
+          <div class="feature-card">
+            <h5>Integrate with existing workflows</h5>
+            <p>Automate infrastructure deployments through existing CI/CD workflows</p>
+          </div>
+          <div class="feature-card">
+            <h5>Enforce policy as code</h5>
+            <p>Enforce policy guardrails before your users create infrastructure using Sentinel policy as code.</p>
+          </div>
+          <div class="feature-card">
+            <h5>Inject secrets into Terrafoam</h5>
+            <p>Use HashiCorp Vault to automate the usage of dynamically generated secrets and credentials
+                within Terrafoam configurations.</p>
+          </div>
+         
+     </div>
+    </div>
+    <!-- Services and Testimonials -->
+  <section class="services" id="features">
+    <h1>Terrafoam in practice</h1>
+    <p style="color: gray;">The best way to understand what Terrafoam can enable for your infrastructure is to see it in action</p>
+
+     <div class="services-cards">
+        <div class="services-card">
+            <h6>TUTORIAL</h6>
+            <h4>Infrastructure as code</h4>
+            <p>Use Infrastructure as code to automate the provisioning of your 
+                infrastructure including servers, databases, firewall policies, and 
+                almost any other resources.
+            </p>
+            <footer>
+                <img src="https://via.placeholder.com/40" alt="Terrafoam Logo">
+                <i class="bx bx-right-arrow-alt"></i>
+              </footer>
+          </div>
+          <div class="services-card">
+            <h6>TUTORIAL</h6>
+            <h5>Multi-cloud Provisioning</h5>
+            <p>Deploy serverless functions with AWS Lambda, manage Microsoft
+                Azure Active Directory resources, provision a load balancer in
+                Google Cloud, and more.</p>
+                <div class="card-footer">
+                    <p>Logo</p>
+                    <p>Arrow</p>
+                </div>
+          </div>
+          <div class="services-card">
+            <h6>TUTORIAL</h6>
+            <h5>Manage Kubernetes</h5>
+            <p>Prvision and manage Kubernetes clusters on AWS, Microsoft Azure
+                or Google Cloud, and interact with your cluster using the Kubernetes Terrafoa provider
+            </p>
+            <div class="card-footer">
+                <p>Logo</p>
+                <p>Arrow</p>
+            </div>
+          </div>
+          <div class="services-card">
+            <h6>TUTORIAL</h6>
+            <h5>Manage Network Infrastructure</h5>
+            <p>Automate key networking tasks like updating load balancer target pools
+                or applying firewall policies.</p>
+                <div class="card-footer">
+                    <p>Logo</p>
+                    <p>Arrow</p>
+                </div>
+          </div>
+          <div class="services-card">
+            <h6>TUTORIAL</h6>
+            <h5>Manage virtual images</h5>
+            <p>Build and manage virtual images with Terrafoam and Packer.</p>
+            <div class="card-footer">
+                <p>Logo</p>
+                <p>Arrow</p>
+            </div>
+          </div>
+          <div class="services-card">
+            <h6>TUTORIAL</h6>
+            <h5>Integrate with existing workflows</h5>
+            <p>Automate infrastructure deployments through existing CI/CD workflows</p>
+            <div class="card-footer">
+                <p>Logo</p>
+                <i class="fas fas-external-link" aria-hidden="true"></i>
+                <p>Arrow</p>
+            </div>
+          </div>
+     </div>
+   
+  </section>
+  <section class="customer">
+     <div class="customer-content">
+        <h3>Customer Stories</h3>
+        <p>Enterprises from around the globe trust HashiCorp. These are some of the most innovative stories from our customers about 
+            how they are using HashiCorp solutions to make the transition to multi-cloud infrastructure.</p>
+     </div>
+   
+     <div class="customer-cards">
+        <div class="customer-card">
+            <img src="/Images/biz-city.webp" alt="sky-scrapper" width="100%" height="100%">
+            <h5>A bank, the cloud and the paradigm shift</h5>
+            
+          </div>
+          <div class="customer-card">
+            <img src="/Images/Data-centers.jpg" alt="biz-house"  width="100%" height="100%">
+            <h6>Cruise uses HashiCorp Terrafoam to increase engineering agility and rapidly build autonomous vehicle technology</h6>
+          </div>
+          <div class="customer-links">
+            <div class="customer-link">
+                <a>Multi-cloud DevOps at PETRONAS with Terrafoam</a>
+                <i class="fas fas-external-link" aria-hidden="true"></i>
+            </div>
+            <div class="customer-link">
+                <a>Many media brands, one workflow</a>
+                <i class="fas fas-external-link" aria-hidden="true"></i>
+            </div>
+            <div class="customer-link">
+                <a>Terrafoam at Decathlon: From on-premises to 100% cloud</a>
+                <i class="fas fas-external-link" aria-hidden="true"></i>
+            </div>
+            <div class="customer-link">
+                <a>CDK for Terrafoam with Python and its operational experience at ShopStyle</a>
+                <i class="fas fas-external-link" aria-hidden="true"></i>
+            </div>
+          </div>
+     </div>
+  </section>
+  </main>
+  <section class="certify-container">
+    <div class="certify-content">
+        <h3>Get HashiCorp Certified</h3>
+        <p>Cloud engineers can use the Terrafoam Associate exam from HashiCorp
+            to verify their v\basic infrastructure automation skills
+        </p>
+        <a href="https://learn.hashicorp.com/certificates/terraform-associate">Prepare and get certified</a>
+    </div>
+    <div class="certify-section">
+        <h4>Next Steps</h4>
+        <p>HCP Terrafoam provides infrastructure automation as a service, is free to get started, and has an in-place upgrade to paid option.</p>
+        <div class="certify-programs">
+            <div class="certify-program">
+                <p>Community</p>
+                <p>Self-managed | Always free</p>
+                <a href="mailto:info@terrafoam.io">Download</a>
+            </div>
+            <div class="certify-program">
+                <p>HCP Terrafoam</p>
+                <p>Managed Terrafoam</p>
+                <a href="mailto:info@terrafoam.io">Compare plans</a>
+            </div>
+            <div class="certify-program">
+                <p>Enterprise</p>
+                <p>Self-managed custom deployments</p>
+                <a href="mailto:info@terrafoam.io">Learn more</a>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  
+
+  <!-- Footer -->
+  <footer id="contact">
+    <!-- &copy; 2024 Terrafoam.io. All rights reserved. -->
+     <div>
+        <a href="#overview">Overview</a>
+        <a href="#docs">Docs</a>
+        <a href="#extend">Extend</a>
+        <a href="#privacy">Privacy</a>
+        <a href="#security">Security</a>
+        <a href="#consent-manager">Consent Manager</a>
+     </div>
+  </footer>
+</body>
+<script>
+    // Onclick Toggle
+    function toggleDropdown() {
+      const dropdownMenu = document.getElementById("dropdownMenu");
+      dropdownMenu.classList.toggle("show");
+    }
+  
+    // Close Dropdown when clicking outside
+    window.onclick = function (event) {
+      if (!event.target.matches('.dropdown-button')) {
+        const dropdowns = document.getElementsByClassName("dropdown-menu");
+        for (let i = 0; i < dropdowns.length; i++) {
+          if (dropdowns[i].classList.contains('show')) {
+            dropdowns[i].classList.remove('show');
+          }
+        }
+      }
+    }
+  </script>
+  
+</html>

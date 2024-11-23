@@ -37,7 +37,9 @@
     align-items: center;
 
   }
-  
+  .mobile-nav{
+    display: none;
+  }
   .navbar-nav {
     display: flex;
     align-items: center;
@@ -51,8 +53,13 @@
     font-weight: 400;
     transition: color 0.3s;
   }
+  .mobile-nav a {
+    font-size: 0.9rem;
+    font-weight: 400;
+    transition: color 0.3s;
+  }
   
-  .navbar-nav a:hover {
+  .mobile-nav a:hover {
     background-color: #f3f4f6;
     padding: 6px;
   }
@@ -484,3 +491,144 @@
   .dropdown-menu .show {
     display: block;
   }
+/* body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-nav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+  }
+  
+  .features {
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .feature-cards, .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+  
+  .feature-card {
+    background: #fff;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: calc(33.33% - 2rem);
+    text-align: left;
+  }
+   */
+  /* Media Queries */
+  @media (max-width: 1024px) {
+    .navbar-nav {
+      display: none;
+    }
+  
+    .hero {
+      padding: 3rem 1.5rem;
+    }
+  
+
+    .features {
+      padding: 3rem 1.5rem;
+    }
+  
+    .feature-card {
+      width: calc(50% - 1.5rem);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .navbar {
+      justify-content: space-between;
+      align-items: center;
+    }
+    .navbar-brand {
+      justify-content: center;
+    }
+  .mobile-nav{
+    display: block;
+  }
+    .hero h1 {
+      font-size: 1.8rem;
+    }
+    .hero p {
+        font-size: 1rem;
+      }
+
+    .features h1 {
+        font-size: 1.8rem;
+      }
+      .features p {
+        font-size: 1rem;
+      }
+  
+    .features-list {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+  
+    .feature-card {
+      width: 100%;
+    }
+  }
+  
+
+  
+  @media (max-width: 480px) {
+    
+    .hero {
+      padding: 2rem 1rem;
+    }
+  
+    .hero h1 {
+      font-size: 1.5rem;
+    }
+  
+    .hero p {
+      font-size: 0.9rem;
+    }
+  
+    .features {
+      padding: 2rem 1rem;
+    }
+  
+    .feature-card {
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+    .features h1 {
+        font-size: 1.5rem;
+      }
+    
+      .features p {
+        font-size: 0.9rem;
+      }
+  }
+  
