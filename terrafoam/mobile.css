@@ -405,7 +405,9 @@
     width: 40%;
   }
 
-
+  .certify-container {
+    /* padding: 60px 4%; */
+  }
    
   .certify-content{
     /* background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%); */
@@ -489,24 +491,78 @@
     padding: 0;
     margin: 0;
   }
-  .certify-program {
+  .certify-program-one {
     background-color: #ead2fe;
+    padding: 30px 4%;
+    width: 90%;
+    border-radius: 10px;
   }
-
-
+  .certify-program-one h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  .certify-program-one p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  .certify-program-one a {
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  .certify-program-one a:hover {
+    text-decoration: underline;
+  }
 
   .certify-section img {
     width: 60%;
   }
-   /* Footer */
-   footer {
-    background: #ECECEC;
-    padding: 20px 10%;
-    font-size: 0.9rem;
+  .certify-program-two{
     display: flex;
+    justify-content: space-between;
     align-items: center;
     gap: 20px;
+    width: 90%;
+    margin: 20px 2px;
+
   }
+  .certify-program-twos {
+    padding: 5%;
+    background-color: #f1f2f3;
+    border-radius: 10px;
+    width: 50%;
+  }
+  .certify-program-two h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  .certify-program-two p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  .certify-program-two a {
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+   /* Footer */
+   footer {
+    padding: 20px 10%;
+   
+  }
+  .footer{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  .footer a {
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  .footer a:hover {
+    text-decoration: underline;
+  }
+
   .dropdown {
     position: relative;
     display: inline-block;
@@ -691,7 +747,16 @@
 
 
   @media (max-width: 480px) {
-    
+    .navbar {
+      justify-content: space-between;
+      align-items: center;
+    }
+    .navbar-brand {
+      justify-content: center;
+    }
+  .mobile-nav{
+    display: block;
+  }
     .hero {
       padding: 2rem 1rem;
     }
@@ -718,6 +783,18 @@
     
       .features p {
         font-size: 0.9rem;
+      }
+      .features-all{
+        flex-direction: column;
+      }
+      .features-all img {
+        width: 100%;
+
+      }
+      .features-list{
+        display: flex;
+        flex-direction: column;
+        
       }
   }
   
