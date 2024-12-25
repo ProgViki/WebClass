@@ -1,12 +1,12 @@
-console.log('I hope everyone is enjoying the JavaScript class in GeophiaAcademy.\nDo you ?') // line break
+console.log('I hope everyone is enjoying the JavaScript class in Geophia Academy.\nDo you ?') // line break
 console.log('Days\tTopics\tExercises')
 console.log('Day 1\t3\t5')
 console.log('Day 2\t3\t5')
 console.log('Day 3\t3\t5')
 console.log('Day 4\t3\t5')
-console.log('This is a backslash  symbol (\\)') // To write a backslash
-console.log('In every programming language it starts with \"Hello, World!\"')
-console.log("In every programming language it starts with \'Hello, World!\'")
+console.log('This is a backslash symbol (\\)') // To write a backslash
+console.log('In every programming language it starts with "Hello, World!"')
+console.log("In every programming language it starts with \\'Hello, World!\\'")
 console.log('The saying \'Seeing is Believing\' isn\'t correct in 2020')
 
 let space = '';
@@ -65,3 +65,40 @@ let lastIndex = string.length - 1
 
 console.log(lastIndex)  // 9
 console.log(string[lastIndex])    // t
+
+
+
+let strings = 'JavaScript'
+
+console.log(strings.toUpperCase())     // JAVASCRIPT
+
+let firsName = 'Asabeneh'
+
+console.log(firsName.toUpperCase())  // ASABENEH
+
+let kountry = 'Finland'
+
+console.log(kountry.toUpperCase())    // FINLAND
+
+let firstLetters = string[0]
+
+console.log(firstLetters)           // J
+
+let secondLetters = string[1]       // a
+let thirdLetters = string[2]
+let lastLetters = string[9]
+
+console.log(lastLetter)            // t
+
+let lastIndexs = string.length - 1
+
+console.log(lastIndex)  // 9
+console.log(string[lastIndex])    // t
+
+
+let Cars = ['toyota', 'volvo', 'bmw', 'honda', 'tesla', 'nissan', 'ford', 'chevrolet', 'jeep', 'subaru']
+
+console.log(Cars[0])  // toyota
+console.log(Cars.length)  // 10
+console.log(Cars.indexOf('honda'))  // 3
+
